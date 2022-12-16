@@ -255,6 +255,14 @@ button {
             transform: rotate(-12deg);
         }
 
+        .crack-line2 {
+            width: calc(134px / 100vw * 100);
+            border: calc(1px / 100vw * 100) solid rgb(136, 121, 121);
+            top: calc(54% / 100vw * 100);
+            left: calc(-63% / 100vw * 100);
+            transform: rotate(-12deg);
+        }
+
         .crackLeft-Bot {
             width: calc(220px / 100vw * 100);
             height: calc(220px / 100vw * 100);
@@ -298,3 +306,75 @@ button {
             transform: rotate(110deg);
         }
     }
+
+
+    @media (min-width: 601px) and (max-width: 900px) {
+        .crackTop {
+            width: calc(120px / 100vw * 100);
+            height: calc(80px / 100vw * 100);
+            top: calc(-8% / 100vw * 100);
+            left: calc(20% / 100vw * 100);
+            transform: rotate(12deg);
+        }
+
+        .crackTop-Left {
+            width: calc(100px / 100vw * 100);
+            height: calc(80px / 100vw * 100);
+            top: calc(-4% / 100vw * 100);
+            left: calc(0% / 100vw * 100);
+            transform: rotate(4deg);
+        }
+
+        .crackTop-Right {
+            width: calc(120px / 100vw * 100);
+            height: calc(128px / 100vw * 100);
+            top: calc(-8% / 100vw * 100);
+            left: calc(48% / 100vw * 100);
+            transform: rotate(28deg);
+        }
+
+        .crackLeft-Mid {
+            width: calc(160px / 100vw * 100);
+            height: calc(96px / 100vw * 100);
+            top: calc(24% / 100vw * 100);
+            left: calc(-13% / 100vw * 100);
+            transform: rotate(24deg);
+        }
+
+        .crack-line1 {
+            width: calc(108px / 100vw * 100);
+            border: calc(1px / 100vw * 100) solid rgb(136, 121, 121);
+            top: calc(43% / 100vw * 100);
+            left: calc(-50% / 100vw * 100);
+            transform: rotate(-10deg);
+        }
+
+        .crackLeft-Bot {
+            width: calc(176px / 100vw * 100);
+            height: calc(176px / 100vw * 100);
+            clip-path: polygon(calc(20% / 100vw * 100) 0%, calc(80% / 100vw * 100) 0%, calc(100% / 100vw * 100) calc(40% / 100vw * 100), calc(80% / 100vw * 100) calc(100% / 100vw * 100), calc(20% / 100vw * 100) calc(100% / 100vw * 100), 0% calc(40% / 100vw * 100));
+            bottom: calc(-14% / 100vw * 100);
+            left: calc(-6% / 100vw * 100);
+            transform: rotate(88deg);
+        }
+
+        .crackBot-Mid {
+            width: calc(240px / 100vw * 100);
+            height: calc(240px / 100vw * 100);
+            clip-path: polygon(calc(40% / 100vw * 100) 0%, 0% calc(100% / 100vw * 100), calc(100% / 100vw * 100) calc(100% / 100vw * 100));
+            bottom: calc(-28% / 100vw * 100);
+            left: calc(20% / 100vw * 100);
+            transform: rotate(44deg);
+        }
+
+        .crackRight-Mid {
+            width: calc(128px / 100vw * 100);
+            height: calc(72px / 100vw * 100);
+            top: calc(24% / 100vw * 100);
+            left: calc(63% / 100vw * 100);
+            transform: rotate(24deg);
+        }
+
+        .crackRight-Top {
+            width: calc(120px / 100vw * 100);
+            height: calc(
