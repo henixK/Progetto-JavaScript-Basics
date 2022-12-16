@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 
 * {
     box-sizing: border-box;
     margin: auto;
 }
 
-
 body {
-    background: rgb(34,195,145);
-    background: radial-gradient(circle, rgba(34,195,145,0.8505154639175257) 16%, rgba(253,187,45,1) 100%);
+    background: rgb(34, 195, 145);
+    background: radial-gradient(circle,
+            rgba(34, 195, 145, 0.8505154639175257) 16%,
+            rgba(253, 187, 45, 1) 100%);
 }
 
 h1 {
@@ -25,7 +26,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 40px -20px rgba(0,0,0,0.4);
+    box-shadow: 10px 10px 40px -20px rgba(0, 0, 0, 0.4);
     border-radius: 54% / 65% 65% 47% 47%;
     background-color: rgb(190, 27, 27);
 }
@@ -48,7 +49,9 @@ h1 {
     border: 1px solid black;
     left: 23%;
     top: 8px;
-    background: radial-gradient(circle, rgba(34,195,145,0.8505154639175257) 16%, rgba(253,187,45,1) 100%);
+    background: radial-gradient(circle,
+            rgba(34, 195, 145, 0.8505154639175257) 16%,
+            rgba(253, 187, 45, 1) 100%);
 }
 
 .screen {
@@ -72,7 +75,6 @@ h1 {
     display: inline-flex;
     align-items: center;
     font-family: "orbitron";
-
 }
 
 .screen .crack {
@@ -81,7 +83,6 @@ h1 {
     position: absolute;
     z-index: -1;
 }
-
 
 .crackTop {
     width: 70px;
@@ -107,7 +108,6 @@ h1 {
     transform: rotate(35deg);
 }
 
-
 .crackLeft-Mid {
     width: 100px;
     height: 60px;
@@ -123,7 +123,6 @@ h1 {
     left: -63%;
     transform: rotate(-12deg);
 }
-
 
 .crackLeft-Bot {
     width: 110px;
@@ -175,9 +174,8 @@ h1 {
     width: 82%;
     height: 82%;
     box-shadow: 20px 20px 1px 10px rgb(124, 8, 8);
-    filter: blur(45px);    
+    filter: blur(45px);
 }
-
 
 .button-container {
     position: absolute;
@@ -210,10 +208,93 @@ button {
     left: 55%;
 }
 
-
-@media only screen and (max-width: 425px) {
-    
-    div {
-        width: 60%;
+@media (max-width: 600px) {
+    .tamagotchi {
+        width: 80vw;
+        height: 100vw;
     }
-}
+
+    @media (max-width: 600px) {
+        .crackTop {
+            width: calc(140px / 100vw * 100);
+            height: calc(100px / 100vw * 100);
+            top: calc(-10% / 100vw * 100);
+            left: calc(25% / 100vw * 100);
+            transform: rotate(14deg);
+        }
+
+        .crackTop-Left {
+            width: calc(120px / 100vw * 100);
+            height: calc(100px / 100vw * 100);
+            top: calc(-5% / 100vw * 100);
+            left: calc(-5% / 100vw * 100);
+            transform: rotate(5deg);
+        }
+
+        .crackTop-Right {
+            width: calc(140px / 100vw * 100);
+            height: calc(160px / 100vw * 100);
+            top: calc(-10% / 100vw * 100);
+            left: calc(60% / 100vw * 100);
+            transform: rotate(35deg);
+        }
+
+        .crackLeft-Mid {
+            width: calc(200px / 100vw * 100);
+            height: calc(120px / 100vw * 100);
+            top: calc(30% / 100vw * 100);
+            left: calc(-16% / 100vw * 100);
+            transform: rotate(30deg);
+        }
+
+        .crack-line1 {
+            width: calc(134px / 100vw * 100);
+            border: calc(1px / 100vw * 100) solid rgb(136, 121, 121);
+            top: calc(54% / 100vw * 100);
+            left: calc(-63% / 100vw * 100);
+            transform: rotate(-12deg);
+        }
+
+        .crackLeft-Bot {
+            width: calc(220px / 100vw * 100);
+            height: calc(220px / 100vw * 100);
+            clip-path: polygon(calc(25% / 100vw * 100) 0%, calc(75% / 100vw * 100) 0%, calc(100% / 100vw * 100) calc(50% / 100vw * 100), calc(75% / 100vw * 100) calc(100% / 100vw * 100), calc(25% / 100vw * 100) calc(100% / 100vw * 100), 0% calc(50% / 100vw * 100));
+            bottom: calc(-17% / 100vw * 100);
+            left: calc(-8% / 100vw * 100);
+            transform: rotate(100deg);
+        }
+
+        .crackBot-Mid {
+            width: calc(300px / 100vw * 100);
+            height: calc(300px / 100vw * 100);
+            clip-path: polygon(calc(50% / 100vw * 100) 0%, 0% calc(100% / 100vw * 100), calc(100% / 100vw * 100) calc(100% / 100vw * 100));
+            bottom: calc(-34% / 100vw * 100);
+            left: calc(26% / 100vw * 100);
+            transform: rotate(55deg);
+        }
+
+        .crackRight-Mid {
+            width: calc(160px / 100vw * 100);
+            height: calc(90px / 100vw * 100);
+            top: calc(32% / 100vw * 100);
+            left: calc(79% / 100vw * 100);
+            transform: rotate(30deg);
+        }
+
+        .crackRight-Top {
+            width: calc(140px / 100vw * 100);
+            height: calc(120px / 100vw * 100);
+            top: calc(-10% / 100vw * 100);
+            left: calc(78% / 100vw * 100);
+            transform: rotate(30deg);
+        }
+
+        .crackRight-Bot {
+            width: calc(200px / 100vw * 100);
+            height: calc(200px / 100vw * 100);
+            clip-path: polygon(calc(25% / 100vw * 100) 0%, calc(75% / 100vw * 100) 0%, calc(100% / 100vw * 100) calc(50% / 100vw * 100), calc(75% / 100vw * 100) calc(100% / 100vw * 100), calc(25% / 100vw * 100) calc(100% / 100vw * 100), 0% calc(50% / 100vw * 100));
+            bottom: calc(-17% / 100vw * 100);
+            left: calc(72% / 100vw * 100);
+            transform: rotate(110deg);
+        }
+    }
