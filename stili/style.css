@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'retrogaming' ;
+    src: url(../stili/fonts/RetroGaming.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: 'retrogaming';
+}
+
+.pokeball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vw;
+    border: 10px solid black;
+    border-radius: 50%;
+    background: linear-gradient(0deg,#fff 0%,#fff 50%,#ee1515 50%,#ee1515 100%);
+}
+
+.screen {
+    width: 28vw;
+    height: 20vw;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: rgb(128, 136, 116);
+    z-index: 2;
+}
+
+.screen::after {
+    content: "";
+    position: absolute;
+    top: 75%; 
+    left: 0;
+    right: 0;
+    height: 3px; 
+    background-color: black; 
+}
+
+#counter {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+}
+
+.line {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 4vw;
+    background-color: black;
+    border-radius: 5px;
+    z-index: 1; 
+}
+
+
+.button-container {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-button {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+}
+
+button {
+    width: 5vw;
+    height: 5vw;
+    border: 0.3em solid black;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #fff;
+    transform-origin: top center;
+    transition: 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+    box-shadow: 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.save-container {
+    position: absolute;
+    top: 80%;
+    margin: 10px;
+}
+
+
+@media que
