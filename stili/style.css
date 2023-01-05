@@ -48,12 +48,25 @@ body {
     background-color: black; 
 }
 
+.charmender {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    transform: scale(5);
+    background: transparent;
+    box-shadow: 10px 6px #000000, 11px 6px #000000, 12px 6px #000000, 13px 6px #000000, 23px 6px #000000, 9px 7px #000000, 14px 7px #000000, 22px 7px #000000, 24px 7px #000000, 8px 8px #000000, 15px 8px #000000, 22px 8px #000000, 25px 8px #000000, 8px 9px #000000, 15px 9px #000000, 22px 9px #000000, 25px 9px #000000, 7px 10px #000000, 16px 10px #000000, 21px 10px #000000, 26px 10px #000000, 6px 11px #000000, 11px 11px white, 12px 11px #000000, 16px 11px #000000, 21px 11px #000000, 24px 11px #918d8d, 26px 11px #000000, 6px 12px #000000, 11px 12px #000000, 12px 12px #000000, 17px 12px #000000, 21px 12px #000000, 23px 12px #918d8d, 24px 12px #918d8d, 26px 12px #000000, 6px 13px #000000, 11px 13px #000000, 12px 13px #000000, 18px 13px #000000, 22px 13px #000000, 23px 13px #918d8d, 24px 13px #000000, 25px 13px #000000, 7px 14px #000000, 18px 14px #000000, 22px 14px #000000, 24px 14px #000000, 8px 15px #000000, 9px 15px #000000, 19px 15px #000000, 21px 15px #000000, 24px 15px #000000, 10px 16px #000000, 11px 16px #000000, 12px 16px #000000, 15px 16px #000000, 20px 16px #000000, 23px 16px #000000, 11px 17px #000000, 12px 17px #918d8d, 13px 17px #918d8d, 14px 17px #000000, 20px 17px #000000, 23px 17px #000000, 11px 18px #000000, 12px 18px #a5a1a1, 13px 18px #a5a1a1, 14px 18px #a5a1a1, 15px 18px #000000, 16px 18px #000000, 20px 18px #000000, 22px 18px #000000, 10px 19px #000000, 11px 19px white, 12px 19px #000000, 13px 19px #a5a1a1, 14px 19px #a5a1a1, 15px 19px #a5a1a1, 20px 19px #000000, 21px 19px #000000, 11px 20px #000000, 12px 20px #000000, 13px 20px #000000, 14px 20px #a5a1a1, 15px 20px #a5a1a1, 19px 20px #000000, 20px 20px #000000, 14px 21px #000000, 15px 21px #000000, 16px 21px #000000, 18px 21px #000000, 19px 21px #000000, 15px 22px #000000, 16px 22px white, 18px 22px white, 19px 22px #000000, 16px 23px #000000, 17px 23px #000000, 18px 23px #000000;
+
+}
+
 #counter {
     position: absolute;
-    top: 45%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5em;
+    font-size: 3em;
 }
 
 .line {
@@ -104,9 +117,8 @@ button:active {
 
 .save-container {
     position: absolute;
-    top: 80%;
+    top: 75%;
     margin: 10px;
+    overflow: auto;
 }
 
-
-@media que

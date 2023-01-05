@@ -20,7 +20,7 @@ const minus = elementFromHtml("<button class='minus-button'></button>");
 const reset = elementFromHtml("<button class='middle-button'></button>");
 const plus = elementFromHtml("<button class='plus-button'></button>");
 
-saveContainer.innerHTML = "Saved numbers: ";
+saveContainer.innerHTML = "Saved numbers: "
 
 saveContainer.append(savedNumbers);
 screen.append(saveContainer);
@@ -40,7 +40,7 @@ reset.addEventListener('click', function () {
     saved += count + ', ';
     count = 0;
     countEl.textContent = count;
-    savedNumbers.textContent = saved;
+    savedNumbers.textContent = saved
 });
 
 minus.addEventListener('click', function () {
