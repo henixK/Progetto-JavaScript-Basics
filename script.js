@@ -29,8 +29,8 @@ buttonContainer.append(minus, reset, plus);
 let countEl = document.getElementById('counter');
 let count = 0;
 
-const bounce = document.querySelector(".bounce");
-const charmender = document.getElementById("charmender")
+
+const charmender = document.querySelector(".charmender")
 
 
 plus.addEventListener('click', function () {
