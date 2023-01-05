@@ -29,28 +29,20 @@ buttonContainer.append(minus, reset, plus);
 let countEl = document.getElementById('counter');
 let count = 0;
 
+const plusButton = document.querySelector(".plus-button");
+const charmender = document.querySelector(".charmender");
 
-const charmender = document.querySelector(".charmender")
 
-
-plus.addEventListener('click', function () {
+plusButton.addEventListener('click', () => {
+    charmender.classList.add("bounce");
     count++;
     countEl.textContent = count;
-    charmender.style.animationPlayState = "running";
-    console.log(charmender.style.animationPlayState)
 });
-
-
-function resetAnimation(charmender) {
-    charmender.style.animationPlayState = "paused";
-    charmender.style.animationIterationCount = "0";
-}
-resetAnimation(charmender)
-console.log(resetAnimation)
 
 let saved = '';
 
 reset.addEventListener('click', function () {
+    charmender.classList.add("bounce");
     saved += count + ', ';
     count = 0;
     countEl.textContent = count;
@@ -58,8 +50,13 @@ reset.addEventListener('click', function () {
 });
 
 minus.addEventListener('click', function () {
+    charmender.classList.add("bounce");
     count--;
     countEl.textContent = count;
+});
+
+charmender.addEventListener("animationend", () => {
+    charmender.classList.remove("bounce");
 });
 
 

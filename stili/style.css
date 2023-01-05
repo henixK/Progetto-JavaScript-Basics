@@ -56,7 +56,7 @@ body {
     background-color: black; 
 }
 
-#charmender {
+.charmender {
     width: 1px;
     height: 1px;
     position: absolute;
@@ -89,6 +89,10 @@ body {
     18px 21px #000000, 19px 21px #000000, 15px 22px #000000, 16px 22px white, 
     18px 22px white, 19px 22px #000000, 16px 23px #000000,17px 23px #000000, 
     18px 23px #000000;
+    
+}
+
+.bounce {
     animation: bounce 1s linear 0s 1 normal forwards;
 }
 
