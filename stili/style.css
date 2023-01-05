@@ -15,7 +15,7 @@ body {
 
 .title {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 3em;
 }
 
@@ -26,16 +26,16 @@ body {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30vw;
-    height: 30vw;
+    width: 40vw;
+    height: 40vw;
     border: 10px solid black;
     border-radius: 50%;
     background: linear-gradient(0deg,#fff 0%,#fff 50%,#ee1515 50%,#ee1515 100%);
 }
 
 .screen {
-    width: 18vw;
-    height: 11vw;
+    width: 25vw;
+    height: 14vw;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -61,8 +61,8 @@ body {
     height: 1px;
     position: absolute;
     top: 40%;
-    left: 39.5%;
-    transform: translate(-50%, -50%) scale(2);
+    left: 37%;
+    transform: translate(-50%, -50%) scale(3);
     box-shadow: 10px 6px #000000, 11px 6px #000000, 12px 6px #000000,
     13px 6px #000000, 23px 6px #000000, 9px 7px #000000, 14px 7px #000000,
     22px 7px #000000, 24px 7px #000000, 8px 8px #000000, 15px 8px #000000,
@@ -100,7 +100,7 @@ body {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 1;
-		transform: translateY(-5px) scale(2);
+		transform: translateY(-5px) scale(3);
 	}
 
 	24% {
@@ -109,39 +109,37 @@ body {
 
 	40% {
 		animation-timing-function: ease-in;
-		transform: translateY(-25px) scale(2);
+		transform: translateY(-25px) scale(3);
 	}
 
 	65% {
 		animation-timing-function: ease-in;
-		transform: translateY(-20px)scale(2);
+		transform: translateY(-20px)scale(3);
 	}
 
 	85% {
 		animation-timing-function: ease-in;
-		transform: translateY(-10px)scale(2);
+		transform: translateY(-10px)scale(3);
 	}
 
 	90% {
 		animation-timing-function: ease-out;
-		transform: translateY(0px)scale(2);
+		transform: translateY(0px)scale(3);
 	}
 
 	100% {
 		animation-timing-function: ease-out;
 		opacity: 1;
-		transform: translateY(0px)scale(2);
+		transform: translateY(0px)scale(3);
 	}
 }
-
-
 
 #counter {
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .line {
@@ -149,7 +147,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30vw;
+    width: 40vw;
     height: 4vw;
     background-color: black;
     border-radius: 5px;
@@ -162,20 +160,20 @@ body {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 15vw;
+    width: 20vw;
     display: flex;
     justify-content: space-between;
 }
 
 .middle-button {
-    width: 4vw;
-    height: 4vw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
 }
 
 button {
-    width: 3vw;
-    height: 3vw;
+    width: 4vw;
+    height: 4vw;
     border: 0.3em solid black;
     border-radius: 50%;
     text-align: center;
