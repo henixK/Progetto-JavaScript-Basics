@@ -15,8 +15,8 @@ body {
 
 .title {
     text-align: center;
-    margin-top: 25px;
-    font-size: 2em;
+    margin-top: 100px;
+    font-size: 3em;
 }
 
 
@@ -26,16 +26,16 @@ body {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 45vw;
-    height: 45vw;
+    width: 30vw;
+    height: 30vw;
     border: 10px solid black;
     border-radius: 50%;
     background: linear-gradient(0deg,#fff 0%,#fff 50%,#ee1515 50%,#ee1515 100%);
 }
 
 .screen {
-    width: 28vw;
-    height: 20vw;
+    width: 18vw;
+    height: 11vw;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -60,9 +60,9 @@ body {
     width: 1px;
     height: 1px;
     position: absolute;
-    top: 33%;
-    left: 35%;
-    transform: translate(-50%, -50%) scale(5);
+    top: 40%;
+    left: 39.5%;
+    transform: translate(-50%, -50%) scale(2);
     box-shadow: 10px 6px #000000, 11px 6px #000000, 12px 6px #000000,
     13px 6px #000000, 23px 6px #000000, 9px 7px #000000, 14px 7px #000000,
     22px 7px #000000, 24px 7px #000000, 8px 8px #000000, 15px 8px #000000,
@@ -100,7 +100,7 @@ body {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 1;
-		transform: translateY(-5px) scale(5);
+		transform: translateY(-5px) scale(2);
 	}
 
 	24% {
@@ -109,28 +109,28 @@ body {
 
 	40% {
 		animation-timing-function: ease-in;
-		transform: translateY(-25px) scale(5);
+		transform: translateY(-25px) scale(2);
 	}
 
 	65% {
 		animation-timing-function: ease-in;
-		transform: translateY(-20px)scale(5);
+		transform: translateY(-20px)scale(2);
 	}
 
 	85% {
 		animation-timing-function: ease-in;
-		transform: translateY(-10px)scale(5);
+		transform: translateY(-10px)scale(2);
 	}
 
 	90% {
 		animation-timing-function: ease-out;
-		transform: translateY(0px)scale(5);
+		transform: translateY(0px)scale(2);
 	}
 
 	100% {
 		animation-timing-function: ease-out;
 		opacity: 1;
-		transform: translateY(0px)scale(5);
+		transform: translateY(0px)scale(2);
 	}
 }
 
@@ -149,7 +149,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 45vw;
+    width: 30vw;
     height: 4vw;
     background-color: black;
     border-radius: 5px;
@@ -162,20 +162,20 @@ body {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 25vw;
+    width: 15vw;
     display: flex;
     justify-content: space-between;
 }
 
 .middle-button {
-    width: 6vw;
-    height: 6vw;
+    width: 4vw;
+    height: 4vw;
     border-radius: 50%;
 }
 
 button {
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     border: 0.3em solid black;
     border-radius: 50%;
     text-align: center;
@@ -196,7 +196,7 @@ button:active {
     margin: 10px;
     overflow: auto;
     width: 95%;
-    height: 20%;
+    height: 15%;
 }
 
 .save-container::-webkit-scrollbar {
