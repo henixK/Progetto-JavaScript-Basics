@@ -20,7 +20,20 @@ const minus = elementFromHtml("<button class='minus-button'></button>");
 const reset = elementFromHtml("<button class='middle-button'></button>");
 const plus = elementFromHtml("<button class='plus-button'></button>");
 
-saveContainer.innerHTML = "Saved numbers: "
+saveContainer.innerHTML = "Saved numbers: ";
+
+
+function updateSaveContainer() {
+    if (window.matchMedia("(max-width: 480px)").matches) {
+        saveContainer.innerHTML = "Saved: ";
+    } else {
+        saveContainer.innerHTML = "Saved numbers: ";
+    }
+}
+
+updateSaveContainer();
+window.addEventListener("resize", updateSaveContainer);
+
 
 saveContainer.append(savedNumbers);
 screen.append(saveContainer);

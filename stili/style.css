@@ -206,3 +206,87 @@ button:active {
     background-color: black;
     border-radius: 15px;
 }
+
+@media (max-width: 480px) {
+    
+    .title {
+        margin-top: 150px ;
+        font-size: 2rem;
+    }
+
+    .pokeball {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .screen {
+        width: 55vw;
+        height: 35vw;
+    }
+
+    .line {
+        width: 90vw;
+        height: 10vw;
+    }
+
+    .button-container {
+        width: 50%;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .middle-button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .charmender {
+        top: 30%;
+        left: 65%;
+        transform: scale(2);
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(-5px) scale(2);
+        }
+    
+        24% {
+            opacity: 1;
+        }
+    
+        40% {
+            transform: translateY(-25px) scale(2);
+        }
+    
+        65% {
+            transform: translateY(-20px)scale(2);
+        }
+    
+        85% {
+            transform: translateY(-10px)scale(2);
+        }
+    
+        90% {
+            transform: translateY(0px)scale(2);
+        }
+    
+        100% {
+            transform: translateY(0px)scale(2);
+        }
+    }
+
+    .save-container::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .save-container {
+        left: -3%;
+        width: 98%;
+    }
+
+
+}
