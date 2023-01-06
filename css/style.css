@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'retrogaming' ;
+    font-family: 'retrogaming';
     src: url(../stili/fonts/RetroGaming.ttf);
 }
 
@@ -30,7 +30,7 @@ body {
     height: 40vw;
     border: 10px solid black;
     border-radius: 50%;
-    background: linear-gradient(0deg,#fff 0%,#fff 50%,#ee1515 50%,#ee1515 100%);
+    background: linear-gradient(0deg, #fff 0%, #fff 50%, #ee1515 50%, #ee1515 100%);
 }
 
 .screen {
@@ -49,11 +49,11 @@ body {
 .screen::after {
     content: "";
     position: absolute;
-    top: 70%; 
+    top: 70%;
     left: 0;
     right: 0;
-    height: 3px; 
-    background-color: black; 
+    height: 3px;
+    background-color: black;
 }
 
 .charmender {
@@ -64,32 +64,32 @@ body {
     left: 37%;
     transform: translate(-50%, -50%) scale(3);
     box-shadow: 10px 6px #000000, 11px 6px #000000, 12px 6px #000000,
-    13px 6px #000000, 23px 6px #000000, 9px 7px #000000, 14px 7px #000000,
-    22px 7px #000000, 24px 7px #000000, 8px 8px #000000, 15px 8px #000000,
-    22px 8px #000000, 25px 8px #000000, 8px 9px #000000, 15px 9px #000000,
-    22px 9px #000000, 25px 9px #000000, 7px 10px #000000, 16px 10px #000000,
-    21px 10px #000000, 26px 10px #000000, 6px 11px #000000, 11px 11px white,
-    12px 11px #000000, 16px 11px #000000, 21px 11px #000000, 24px 11px #918d8d,
-    26px 11px #000000, 6px 12px #000000, 11px 12px #000000, 12px 12px #000000, 
-    17px 12px #000000, 21px 12px #000000, 23px 12px #918d8d, 24px 12px #918d8d, 
-    26px 12px #000000, 6px 13px #000000, 11px 13px #000000, 12px 13px #000000, 
-    18px 13px #000000, 22px 13px #000000, 23px 13px #918d8d, 24px 13px #000000, 
-    25px 13px #000000, 7px 14px #000000, 18px 14px #000000, 22px 14px #000000,
-    24px 14px #000000, 8px 15px #000000, 9px 15px #000000, 19px 15px #000000,
-    21px 15px #000000, 24px 15px #000000, 10px 16px #000000, 11px 16px #000000,
-    12px 16px #000000, 15px 16px #000000, 20px 16px #000000, 23px 16px #000000,
-    11px 17px #000000, 12px 17px #918d8d, 13px 17px #918d8d, 14px 17px #000000,
-    20px 17px #000000, 23px 17px #000000, 11px 18px #000000, 12px 18px #a5a1a1,
-    13px 18px #a5a1a1, 14px 18px #a5a1a1, 15px 18px #000000, 16px 18px #000000, 
-    20px 18px #000000, 22px 18px #000000, 10px 19px #000000, 11px 19px white,
-    12px 19px #000000, 13px 19px #a5a1a1, 14px 19px #a5a1a1, 15px 19px #a5a1a1,
-    20px 19px #000000, 21px 19px #000000, 11px 20px #000000, 12px 20px #000000,
-    13px 20px #000000, 14px 20px #a5a1a1, 15px 20px #a5a1a1, 19px 20px #000000,
-    20px 20px #000000, 14px 21px #000000, 15px 21px #000000, 16px 21px #000000, 
-    18px 21px #000000, 19px 21px #000000, 15px 22px #000000, 16px 22px white, 
-    18px 22px white, 19px 22px #000000, 16px 23px #000000,17px 23px #000000, 
-    18px 23px #000000;
-    
+        13px 6px #000000, 23px 6px #000000, 9px 7px #000000, 14px 7px #000000,
+        22px 7px #000000, 24px 7px #000000, 8px 8px #000000, 15px 8px #000000,
+        22px 8px #000000, 25px 8px #000000, 8px 9px #000000, 15px 9px #000000,
+        22px 9px #000000, 25px 9px #000000, 7px 10px #000000, 16px 10px #000000,
+        21px 10px #000000, 26px 10px #000000, 6px 11px #000000, 11px 11px white,
+        12px 11px #000000, 16px 11px #000000, 21px 11px #000000, 24px 11px #918d8d,
+        26px 11px #000000, 6px 12px #000000, 11px 12px #000000, 12px 12px #000000,
+        17px 12px #000000, 21px 12px #000000, 23px 12px #918d8d, 24px 12px #918d8d,
+        26px 12px #000000, 6px 13px #000000, 11px 13px #000000, 12px 13px #000000,
+        18px 13px #000000, 22px 13px #000000, 23px 13px #918d8d, 24px 13px #000000,
+        25px 13px #000000, 7px 14px #000000, 18px 14px #000000, 22px 14px #000000,
+        24px 14px #000000, 8px 15px #000000, 9px 15px #000000, 19px 15px #000000,
+        21px 15px #000000, 24px 15px #000000, 10px 16px #000000, 11px 16px #000000,
+        12px 16px #000000, 15px 16px #000000, 20px 16px #000000, 23px 16px #000000,
+        11px 17px #000000, 12px 17px #918d8d, 13px 17px #918d8d, 14px 17px #000000,
+        20px 17px #000000, 23px 17px #000000, 11px 18px #000000, 12px 18px #a5a1a1,
+        13px 18px #a5a1a1, 14px 18px #a5a1a1, 15px 18px #000000, 16px 18px #000000,
+        20px 18px #000000, 22px 18px #000000, 10px 19px #000000, 11px 19px white,
+        12px 19px #000000, 13px 19px #a5a1a1, 14px 19px #a5a1a1, 15px 19px #a5a1a1,
+        20px 19px #000000, 21px 19px #000000, 11px 20px #000000, 12px 20px #000000,
+        13px 20px #000000, 14px 20px #a5a1a1, 15px 20px #a5a1a1, 19px 20px #000000,
+        20px 20px #000000, 14px 21px #000000, 15px 21px #000000, 16px 21px #000000,
+        18px 21px #000000, 19px 21px #000000, 15px 22px #000000, 16px 22px white,
+        18px 22px white, 19px 22px #000000, 16px 23px #000000, 17px 23px #000000,
+        18px 23px #000000;
+
 }
 
 .bounce {
@@ -97,41 +97,41 @@ body {
 }
 
 @keyframes bounce {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 1;
-		transform: translateY(-5px) scale(3);
-	}
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-5px) scale(3);
+    }
 
-	24% {
-		opacity: 1;
-	}
+    24% {
+        opacity: 1;
+    }
 
-	40% {
-		animation-timing-function: ease-in;
-		transform: translateY(-25px) scale(3);
-	}
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-25px) scale(3);
+    }
 
-	65% {
-		animation-timing-function: ease-in;
-		transform: translateY(-20px)scale(3);
-	}
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-20px)scale(3);
+    }
 
-	85% {
-		animation-timing-function: ease-in;
-		transform: translateY(-10px)scale(3);
-	}
+    85% {
+        animation-timing-function: ease-in;
+        transform: translateY(-10px)scale(3);
+    }
 
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateY(0px)scale(3);
-	}
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px)scale(3);
+    }
 
-	100% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0px)scale(3);
-	}
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px)scale(3);
+    }
 }
 
 #counter {
@@ -151,7 +151,7 @@ body {
     height: 4vw;
     background-color: black;
     border-radius: 5px;
-    z-index: 1; 
+    z-index: 1;
 }
 
 
@@ -198,7 +198,8 @@ button:active {
 }
 
 .save-container::-webkit-scrollbar {
-    background-color: rgb(128, 136, 116);;
+    background-color: rgb(128, 136, 116);
+    ;
     width: 10px;
 }
 
@@ -208,9 +209,9 @@ button:active {
 }
 
 @media (max-width: 480px) {
-    
+
     .title {
-        margin-top: 100px ;
+        margin-top: 100px;
         font-size: 2rem;
     }
 
@@ -253,27 +254,27 @@ button:active {
         0% {
             transform: translateY(-5px) scale(2);
         }
-    
+
         24% {
             opacity: 1;
         }
-    
+
         40% {
             transform: translateY(-25px) scale(2);
         }
-    
+
         65% {
             transform: translateY(-20px)scale(2);
         }
-    
+
         85% {
             transform: translateY(-10px)scale(2);
         }
-    
+
         90% {
             transform: translateY(0px)scale(2);
         }
-    
+
         100% {
             transform: translateY(0px)scale(2);
         }
