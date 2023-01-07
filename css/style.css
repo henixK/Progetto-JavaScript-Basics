@@ -360,7 +360,9 @@ button:active {
     }
 
     .button-side-container {
-        width: 80%;
+        top: 125%;
+        width: 85%;
+
     }
     
     .button-side-container button{
@@ -371,4 +373,6 @@ button:active {
 
     .modal-window {
         width: 150%;
+}
+
 }
