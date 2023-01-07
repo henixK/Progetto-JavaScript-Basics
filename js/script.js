@@ -22,9 +22,9 @@ const buttonSideContainer = createHtmlElements("<div class='button-side-containe
 const deleteButton = createHtmlElements("<button class='delete-button'>del</button>");
 const modalPopup = createHtmlElements("<button class='modal'>?</button>");
 
-
+//Creating the Popup instructions
 const modalWindow = createHtmlElements("<div class='modal-window'></div>");
-const instructions = createHtmlElements("<p>Instructions: This is a simple counter app. Use the button on the right to increment the counter, the button on the left to decrement the counter, and the middle button to save the current count and reset the counter to zero. The saved numbers will be displayed in the saved numbers container. Use the delete button to delete all saved numbers. Click the modal button again or anywhere outside the modal window to close it.</p>");
+const instructions = createHtmlElements("<p>Instructions: This is a simple counter app.<br> Use the button on the right to increment the counter, the button on the left to decrement the counter, and the middle button to save the current count and reset the counter to zero.<br> The saved numbers will be displayed in the saved numbers.<br> Use the delete button to delete all saved numbers.</p>");
 const closeButton = createHtmlElements("<button class='close-button'>&times;</button>");
 
 // Function to update the save container based on the screen size

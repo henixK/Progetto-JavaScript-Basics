@@ -237,10 +237,12 @@ button:active {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     z-index: 1;
+    border: 2px solid black;
 }
 
 .show-modal {
     display: block;
+    border: 2px solid black;
 }
 
 .modal-overlay {
@@ -252,9 +254,10 @@ button:active {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
+    border: 2px solid black;
 }
 
-.show-modal + .modal-overlay {
+.show-modal+.modal-overlay {
     display: block;
 }
 
@@ -264,14 +267,14 @@ button:active {
     font-size: 28px;
     font-weight: bold;
     border: none;
-  }
-  
-  .close-button:hover,
-  .close-button:focus {
+}
+
+.close-button:hover,
+.close-button:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 
 @media (max-width: 480px) {
@@ -298,6 +301,7 @@ button:active {
 
     .button-container {
         width: 50%;
+        top: 85%;
     }
 
     button {
@@ -355,5 +359,15 @@ button:active {
         width: 98%;
     }
 
+    .button-side-container {
+        width: 80%;
+    }
+    
+    .button-side-container button{
+        width: 50px;
+        height: 25px;
+    }
 
+    .modal-window {
+        width: 150%;
 }
