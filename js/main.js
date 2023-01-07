@@ -10,7 +10,6 @@ const screen = document.querySelector(".screen");
 const saveContainer = createHtmlElements("<div class='save-container'>Saved numbers: </div>");
 const savedNumbers = createHtmlElements("<span id='saved-numbers'></span>");
 
-
 //Creating main buttons
 const buttonContainer = document.querySelector(".button-container");
 const decrement = createHtmlElements("<button class='minus-button'></button>");
@@ -76,8 +75,6 @@ deleteButton.addEventListener("click", function () {
     saved = '';
     savedNumbers.textContent = saved;
 });
-
-
 
 // Add an event listener to the minus button to decrement the counter
 decrement.addEventListener("click", function () {
