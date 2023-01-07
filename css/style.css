@@ -366,6 +366,7 @@ button:active {
     .button-side-container button{
         width: 50px;
         height: 25px;
+        color: #000000;
     }
 
     .modal-window {
