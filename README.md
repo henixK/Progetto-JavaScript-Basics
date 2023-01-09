@@ -1,15 +1,31 @@
 # POKECOUNTER
 
-This is a simple counter app that allows you to increment, decrement and reset a count. It was inspired by the pokewalker from Pokemon HeartGold/Soul Silver. The design of the watchface was what led me to create this project.
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#how-to-use-the-counter">How to use the counter</a></li>
+        <li><a href="#link">Link</a></li>
+        <li><a href="#built-with">Built with</a></li>
+        <li><a href="#acknowledgments">Acknowledgments</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </li>    
+  </ol>
+</details>
 
-## Link
 
-- Live site URL [Pokecounter](https://kbpokecounter.netlify.app/)
-- Source Code [Github](https://github.com/henixK/Progetto-JavaScript-Basics)
+## About the project
+    
+  This is a simple counter app that allows you to increment, decrement and reset a count. It was inspired by the pokewalker from Pokemon HeartGold/Soul Silver. The design of the watchface was what led me to create this project.
+
 
 # Overview
-
-## Screenshots
 
 ![2023-01-08-01-00-kbpokecounter netlify app](https://user-images.githubusercontent.com/106398555/211332964-10511d62-1d63-4d0b-90ce-649a15ddaa3f.png)
 
@@ -21,6 +37,11 @@ This is a simple counter app that allows you to increment, decrement and reset a
 - Use the delete button to delete all saved numbers.
 
 The saved numbers will be displayed in the saved numbers.
+
+## Link
+
+- Live site URL [Pokecounter](https://kbpokecounter.netlify.app/)
+- Source Code [Github](https://github.com/henixK/Progetto-JavaScript-Basics)
 
 ## Built with
 
@@ -35,5 +56,5 @@ The saved numbers will be displayed in the saved numbers.
 - [Keyframe animation tool](https://webcode.tools/generators/css/keyframe-animation)
 - [Function to create HTML elements](https://www.youtube.com/watch?v=tlcEXDGo0oY&t=161s&ab_channel=dcode)
 
-## Author
+## Contact
 - Linkedin [Kevin Bautista](https://www.linkedin.com/in/kevin-castaneda-bautista-469411199/)
