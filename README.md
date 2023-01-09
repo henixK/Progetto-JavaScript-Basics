@@ -35,6 +35,7 @@
 - Use the button on the left to decrement the counter
 - Use the middle button to save the current count and reset the counter to zero.
 - Use the delete button to delete all saved numbers.
+- "?" Opens a modal popup with the instruction 
 
 The saved numbers will be displayed in the saved numbers.
 
@@ -57,4 +58,5 @@ The saved numbers will be displayed in the saved numbers.
 - [Function to create HTML elements](https://www.youtube.com/watch?v=tlcEXDGo0oY&t=161s&ab_channel=dcode)
 
 ## Contact
+- My [personal website](https://henixk.github.io/)
 - Linkedin [Kevin Bautista](https://www.linkedin.com/in/kevin-castaneda-bautista-469411199/)
