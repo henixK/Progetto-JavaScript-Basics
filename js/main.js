@@ -23,7 +23,7 @@ const modalPopup = createHtmlElements("<button class='modal'>?</button>");
 
 //Creating the Popup instructions
 const modalWindow = createHtmlElements("<div class='modal-window'></div>");
-const instructions = createHtmlElements("<p>Instructions: This is a simple counter app.<br> Use the button on the right to increment the counter, the button on the left to decrement the counter, and the middle button to save the current count and reset the counter to zero.<br> The saved numbers will be displayed in the saved numbers.<br> Use the delete button to delete all saved numbers.</p>");
+const instructions = createHtmlElements("<p>Instructions:<br> This is a simple counter app.<br> Use the button on the right to increment the counter, the button on the left to decrement the counter, and the middle button to save the current count and reset the counter to zero.<br> The saved numbers will be displayed in the saved numbers.<br> Use the delete button to delete all saved numbers.</p>");
 const closeButton = createHtmlElements("<button class='close-button'>&times;</button>");
 
 // Function to update the save container based on the screen size
