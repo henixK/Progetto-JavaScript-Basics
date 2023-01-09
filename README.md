@@ -28,7 +28,8 @@ The saved numbers will be displayed in the saved numbers.
 - ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 - ![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-## Useful links 
+## Acknowledgments
+
 
 - [Pixel art in pure css](https://pokecoder.hashnode.dev/making-pixel-art-with-pure-css)  
 - [Keyframe animation tool](https://webcode.tools/generators/css/keyframe-animation)
