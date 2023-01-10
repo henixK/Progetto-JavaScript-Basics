@@ -28,12 +28,20 @@ The saved numbers will be displayed in the saved numbers.
 - ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 - ![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
+<<<<<<< HEAD
 ## Acknowledgments
 
+=======
+## Useful links 
+>>>>>>> f7e24e99e3a7d7b393640b3ff399fd798a335754
 
 - [Pixel art in pure css](https://pokecoder.hashnode.dev/making-pixel-art-with-pure-css)  
 - [Keyframe animation tool](https://webcode.tools/generators/css/keyframe-animation)
 - [Function to create HTML elements](https://www.youtube.com/watch?v=tlcEXDGo0oY&t=161s&ab_channel=dcode)
 
 ## Author
+<<<<<<< HEAD
 - Linkedin [Kevin Bautista](https://www.linkedin.com/in/kevin-castaneda-bautista-469411199/)
+=======
+- Linkedin [Kevin Bautista](https://www.linkedin.com/in/kevin-castaneda-bautista-469411199/)
+>>>>>>> f7e24e99e3a7d7b393640b3ff399fd798a335754

@@ -18,7 +18,7 @@ const increment = createHtmlElements("<button class='plus-button'></button>");
 
 //Creating side buttons
 const buttonSideContainer = createHtmlElements("<div class='button-side-container'></div>");
-const deleteButton = createHtmlElements("<button class='delete-button'>del</button>");
+const deleteButton = createHtmlElements("<button class='delete-button'>Del</button>");
 const modalPopup = createHtmlElements("<button class='modal'>?</button>");
 
 //Creating the Popup instructions

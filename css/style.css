@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@300&display=swap');
 @font-face {
     font-family: 'retrogaming';
     src: url(../css/fonts/RetroGaming.ttf);
@@ -10,7 +11,7 @@
 
 body {
     background-color: antiquewhite;
-    font-family: 'retrogaming';
+    font-family: "retrogaming", "barlow", "lato";
 }
 
 .title {
@@ -197,6 +198,7 @@ button {
     transform-origin: top center;
     transition: 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
     box-shadow: 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+    font-family: "barlow", "lato", "retrogaming"
 }
 
 button:active {
