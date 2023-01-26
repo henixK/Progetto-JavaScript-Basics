@@ -48,66 +48,44 @@ screen.append(modalWindow);
 
 let countEl = document.getElementById("counter");
 let count = 0;
+let saved = '';
 const charmender = document.querySelector(".charmender");
 const incrementButton = document.querySelector(".plus-button");
 
-buttonContainer.addEventListener("click", function(event) {
+
+buttonContainer.addEventListener("click", function (event) {
     if (event.target.classList.contains("minus-button")) {
-      // esegui l'azione per il bottone decrement
+        charmender.classList.add("bounce");
+        count--;
+        countEl.textContent = count;
     } else if (event.target.classList.contains("resetSave-button")) {
-      // esegui l'azione per il bottone resetSaveDelete
+        charmender.classList.add("bounce");
+        saved += count + ', ';
+        count = 0;
+        countEl.textContent = count;
+        savedNumbers.textContent = saved;
     } else if (event.target.classList.contains("plus-button")) {
-      // esegui l'azione per il bottone increment
+        charmender.classList.add("bounce");
+        count++;
+        countEl.textContent = count;
     }
 });
 
-
-// Add an event listener to the plus button to increment the counter
-incrementButton.addEventListener("click", () => {
-    charmender.classList.add("bounce");
-    count++;
-    countEl.textContent = count;
-});
-
-let saved = '';
-
-// Add an event listener to the reset button to save the current count and reset the counter
-resetSaveDelete.addEventListener("click", function ()  {
-    charmender.classList.add("bounce");
-    saved += count + ', ';
-    count = 0;
-    countEl.textContent = count;
-    savedNumbers.textContent = saved;
-});
-
-deleteButton.addEventListener("click", function () {
-    saved = '';
-    savedNumbers.textContent = saved;
-});
-
-// Add an event listener to the minus button to decrement the counter
-decrement.addEventListener("click", function () {
-    charmender.classList.add("bounce");
-    count--;
-    countEl.textContent = count;
-});
-
-
-charmender.addEventListener("animationend", () => {
-    charmender.classList.remove("bounce");
-});
-
-modalPopup.addEventListener("click", function () {
-    modalWindow.classList.toggle("show-modal");
-});
-
-
-screen.addEventListener("click", function (event) {
-    if (event.target === modalWindow) {
+buttonSideContainer.addEventListener("click", function (event) {
+    if (event.target.classList.contains("modal")) {
         modalWindow.classList.toggle("show-modal");
+    } else if (event.target.classList.contains("delete-button")) {
+        saved = '';
+        savedNumbers.textContent = saved;
     }
 });
 
 closeButton.addEventListener("click", function () {
     modalWindow.classList.toggle("show-modal");
 });
+
+charmender.addEventListener("animationend", () => {
+    charmender.classList.remove("bounce");
+});
+
+
