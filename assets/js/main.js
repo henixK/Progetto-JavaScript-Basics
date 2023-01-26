@@ -51,6 +51,15 @@ let count = 0;
 const charmender = document.querySelector(".charmender");
 const incrementButton = document.querySelector(".plus-button");
 
+buttonContainer.addEventListener("click", function(event) {
+    if (event.target.classList.contains("minus-button")) {
+      // esegui l'azione per il bottone decrement
+    } else if (event.target.classList.contains("resetSave-button")) {
+      // esegui l'azione per il bottone resetSaveDelete
+    } else if (event.target.classList.contains("plus-button")) {
+      // esegui l'azione per il bottone increment
+    }
+});
 
 
 // Add an event listener to the plus button to increment the counter
