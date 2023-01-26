@@ -58,4 +58,3 @@ The saved numbers will be displayed in the saved numbers.
 
 ## Author
 - Linkedin [Kevin Bautista](https://www.linkedin.com/in/kevin-castaneda-bautista-469411199/)
->>>>>>> f7e24e99e3a7d7b393640b3ff399fd798a335754
