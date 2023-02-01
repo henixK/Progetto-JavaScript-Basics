@@ -1,380 +1,376 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@300&display=swap");
 @font-face {
-    font-family: 'retrogaming';
-    src: url(../css/fonts/RetroGaming.ttf);
+  font-family: "retrogaming";
+  src: url(../css/fonts/RetroGaming.ttf);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    background-color: antiquewhite;
-    font-family: "retrogaming", "barlow", "lato";
+  background-color: antiquewhite;
+  font-family: "retrogaming", "barlow", "lato";
 }
 
 .title {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 3em;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3em;
 }
 
-
-
 .pokeball {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40vw;
-    height: 40vw;
-    border: 10px solid black;
-    border-radius: 50%;
-    background: linear-gradient(0deg, #fff 0%, #fff 50%, #ee1515 50%, #ee1515 100%);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 40vw;
+  border: 10px solid black;
+  border-radius: 50%;
+  background: linear-gradient(
+    0deg,
+    #fff 0%,
+    #fff 50%,
+    #ee1515 50%,
+    #ee1515 100%
+  );
 }
 
 .screen {
-    width: 25vw;
-    height: 14vw;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid black;
-    border-radius: 10px;
-    background-color: rgb(128, 136, 116);
-    z-index: 2;
+  width: 25vw;
+  height: 14vw;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: rgb(128, 136, 116);
+  z-index: 2;
 }
 
 .screen::after {
-    content: "";
-    position: absolute;
-    top: 70%;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: black;
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: black;
 }
 
 .charmender {
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    top: 35%;
-    left: 37%;
-    transform: translate(-50%, -50%) scale(3);
-    box-shadow: 10px 6px #000000, 11px 6px #000000, 12px 6px #000000,
-        13px 6px #000000, 23px 6px #000000, 9px 7px #000000, 14px 7px #000000,
-        22px 7px #000000, 24px 7px #000000, 8px 8px #000000, 15px 8px #000000,
-        22px 8px #000000, 25px 8px #000000, 8px 9px #000000, 15px 9px #000000,
-        22px 9px #000000, 25px 9px #000000, 7px 10px #000000, 16px 10px #000000,
-        21px 10px #000000, 26px 10px #000000, 6px 11px #000000, 11px 11px white,
-        12px 11px #000000, 16px 11px #000000, 21px 11px #000000, 24px 11px #918d8d,
-        26px 11px #000000, 6px 12px #000000, 11px 12px #000000, 12px 12px #000000,
-        17px 12px #000000, 21px 12px #000000, 23px 12px #918d8d, 24px 12px #918d8d,
-        26px 12px #000000, 6px 13px #000000, 11px 13px #000000, 12px 13px #000000,
-        18px 13px #000000, 22px 13px #000000, 23px 13px #918d8d, 24px 13px #000000,
-        25px 13px #000000, 7px 14px #000000, 18px 14px #000000, 22px 14px #000000,
-        24px 14px #000000, 8px 15px #000000, 9px 15px #000000, 19px 15px #000000,
-        21px 15px #000000, 24px 15px #000000, 10px 16px #000000, 11px 16px #000000,
-        12px 16px #000000, 15px 16px #000000, 20px 16px #000000, 23px 16px #000000,
-        11px 17px #000000, 12px 17px #918d8d, 13px 17px #918d8d, 14px 17px #000000,
-        20px 17px #000000, 23px 17px #000000, 11px 18px #000000, 12px 18px #a5a1a1,
-        13px 18px #a5a1a1, 14px 18px #a5a1a1, 15px 18px #000000, 16px 18px #000000,
-        20px 18px #000000, 22px 18px #000000, 10px 19px #000000, 11px 19px white,
-        12px 19px #000000, 13px 19px #a5a1a1, 14px 19px #a5a1a1, 15px 19px #a5a1a1,
-        20px 19px #000000, 21px 19px #000000, 11px 20px #000000, 12px 20px #000000,
-        13px 20px #000000, 14px 20px #a5a1a1, 15px 20px #a5a1a1, 19px 20px #000000,
-        20px 20px #000000, 14px 21px #000000, 15px 21px #000000, 16px 21px #000000,
-        18px 21px #000000, 19px 21px #000000, 15px 22px #000000, 16px 22px white,
-        18px 22px white, 19px 22px #000000, 16px 23px #000000, 17px 23px #000000,
-        18px 23px #000000;
-
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 35%;
+  left: 37%;
+  transform: translate(-50%, -50%) scale(3);
+  box-shadow: 10px 6px #000000, 11px 6px #000000, 12px 6px #000000,
+    13px 6px #000000, 23px 6px #000000, 9px 7px #000000, 14px 7px #000000,
+    22px 7px #000000, 24px 7px #000000, 8px 8px #000000, 15px 8px #000000,
+    22px 8px #000000, 25px 8px #000000, 8px 9px #000000, 15px 9px #000000,
+    22px 9px #000000, 25px 9px #000000, 7px 10px #000000, 16px 10px #000000,
+    21px 10px #000000, 26px 10px #000000, 6px 11px #000000, 11px 11px white,
+    12px 11px #000000, 16px 11px #000000, 21px 11px #000000, 24px 11px #918d8d,
+    26px 11px #000000, 6px 12px #000000, 11px 12px #000000, 12px 12px #000000,
+    17px 12px #000000, 21px 12px #000000, 23px 12px #918d8d, 24px 12px #918d8d,
+    26px 12px #000000, 6px 13px #000000, 11px 13px #000000, 12px 13px #000000,
+    18px 13px #000000, 22px 13px #000000, 23px 13px #918d8d, 24px 13px #000000,
+    25px 13px #000000, 7px 14px #000000, 18px 14px #000000, 22px 14px #000000,
+    24px 14px #000000, 8px 15px #000000, 9px 15px #000000, 19px 15px #000000,
+    21px 15px #000000, 24px 15px #000000, 10px 16px #000000, 11px 16px #000000,
+    12px 16px #000000, 15px 16px #000000, 20px 16px #000000, 23px 16px #000000,
+    11px 17px #000000, 12px 17px #918d8d, 13px 17px #918d8d, 14px 17px #000000,
+    20px 17px #000000, 23px 17px #000000, 11px 18px #000000, 12px 18px #a5a1a1,
+    13px 18px #a5a1a1, 14px 18px #a5a1a1, 15px 18px #000000, 16px 18px #000000,
+    20px 18px #000000, 22px 18px #000000, 10px 19px #000000, 11px 19px white,
+    12px 19px #000000, 13px 19px #a5a1a1, 14px 19px #a5a1a1, 15px 19px #a5a1a1,
+    20px 19px #000000, 21px 19px #000000, 11px 20px #000000, 12px 20px #000000,
+    13px 20px #000000, 14px 20px #a5a1a1, 15px 20px #a5a1a1, 19px 20px #000000,
+    20px 20px #000000, 14px 21px #000000, 15px 21px #000000, 16px 21px #000000,
+    18px 21px #000000, 19px 21px #000000, 15px 22px #000000, 16px 22px white,
+    18px 22px white, 19px 22px #000000, 16px 23px #000000, 17px 23px #000000,
+    18px 23px #000000;
 }
 
 .bounce {
-    animation: bounce 1s linear 0s 1 normal forwards;
+  animation: bounce 1s linear 0s 1 normal forwards;
 }
 
 @keyframes bounce {
-    0% {
-        animation-timing-function: ease-in;
-        opacity: 1;
-        transform: translateY(-5px) scale(3);
-    }
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-5px) scale(3);
+  }
 
-    24% {
-        opacity: 1;
-    }
+  24% {
+    opacity: 1;
+  }
 
-    40% {
-        animation-timing-function: ease-in;
-        transform: translateY(-25px) scale(3);
-    }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-25px) scale(3);
+  }
 
-    65% {
-        animation-timing-function: ease-in;
-        transform: translateY(-20px)scale(3);
-    }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-20px) scale(3);
+  }
 
-    85% {
-        animation-timing-function: ease-in;
-        transform: translateY(-10px)scale(3);
-    }
+  85% {
+    animation-timing-function: ease-in;
+    transform: translateY(-10px) scale(3);
+  }
 
-    90% {
-        animation-timing-function: ease-out;
-        transform: translateY(0px)scale(3);
-    }
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px) scale(3);
+  }
 
-    100% {
-        animation-timing-function: ease-out;
-        opacity: 1;
-        transform: translateY(0px)scale(3);
-    }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px) scale(3);
+  }
 }
 
 #counter {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5em;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
 }
 
 .line {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40vw;
-    height: 4vw;
-    background-color: black;
-    border-radius: 5px;
-    z-index: 1;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 4vw;
+  background-color: black;
+  border-radius: 5px;
+  z-index: 1;
 }
 
-
 .button-container {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20vw;
-    display: flex;
-    justify-content: space-between;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 .button-side-container {
-    position: absolute;
-    top: 115%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20vw;
-    display: flex;
-    justify-content: space-evenly;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .button-side-container button {
-    width: 4vw;
-    height: 2vw;
-
+  width: 4vw;
+  height: 2vw;
 }
 
 .resetSave-button {
-    width: 5vw;
-    height: 5vw;
-    border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
 }
 
 button {
-    width: 4vw;
-    height: 4vw;
-    border: 0.3em solid black;
-    border-radius: 50%;
-    text-align: center;
-    background-color: #fff;
-    transform-origin: top center;
-    transition: 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
-    box-shadow: 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
-    font-family: "barlow", "lato", "retrogaming"
+  width: 4vw;
+  height: 4vw;
+  border: 0.3em solid black;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #fff;
+  transform-origin: top center;
+  transition: 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  box-shadow: 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  font-family: "barlow", "lato", "retrogaming";
 }
 
 button:active {
-    transform: translateY(2px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .save-container {
-    position: absolute;
-    top: 70%;
-    margin: 10px;
-    overflow: auto;
-    width: 95%;
-    height: 20%;
+  position: absolute;
+  top: 70%;
+  margin: 10px;
+  overflow: auto;
+  width: 95%;
+  height: 20%;
 }
 
 .save-container::-webkit-scrollbar {
-    background-color: rgb(128, 136, 116);
-    ;
-    width: 10px;
+  background-color: rgb(128, 136, 116);
+  width: 10px;
 }
 
 .save-container::-webkit-scrollbar-thumb {
-    background-color: black;
-    border-radius: 15px;
+  background-color: black;
+  border-radius: 15px;
 }
 
 .modal-window {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 500px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    z-index: 1;
-    border: 2px solid black;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  border: 2px solid black;
 }
 
 .show-modal {
-    display: block;
-    border: 2px solid black;
+  display: block;
+  border: 2px solid black;
 }
 
 .modal-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-    border: 2px solid black;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  border: 2px solid black;
 }
 
-.show-modal+.modal-overlay {
-    display: block;
+.show-modal + .modal-overlay {
+  display: block;
 }
 
 .close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    border: none;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
 }
 
 .close-button:hover,
 .close-button:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 @media (max-width: 480px) {
+  .title {
+    margin-top: 100px;
+    font-size: 2rem;
+  }
 
-    .title {
-        margin-top: 100px;
-        font-size: 2rem;
+  .pokeball {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .screen {
+    width: 55vw;
+    height: 35vw;
+  }
+
+  .line {
+    width: 90vw;
+    height: 10vw;
+  }
+
+  .button-container {
+    width: 50%;
+    top: 85%;
+  }
+
+  button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .resetSave-button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .charmender {
+    top: 30%;
+    left: 65%;
+    transform: scale(2);
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-5px) scale(2);
     }
 
-    .pokeball {
-        width: 90vw;
-        height: 90vw;
+    24% {
+      opacity: 1;
     }
 
-    .screen {
-        width: 55vw;
-        height: 35vw;
+    40% {
+      transform: translateY(-25px) scale(2);
     }
 
-    .line {
-        width: 90vw;
-        height: 10vw;
+    65% {
+      transform: translateY(-20px) scale(2);
     }
 
-    .button-container {
-        width: 50%;
-        top: 85%;
+    85% {
+      transform: translateY(-10px) scale(2);
     }
 
-    button {
-        width: 30px;
-        height: 30px;
+    90% {
+      transform: translateY(0px) scale(2);
     }
 
-    .resetSave-button {
-        width: 45px;
-        height: 45px;
+    100% {
+      transform: translateY(0px) scale(2);
     }
+  }
 
-    .charmender {
-        top: 30%;
-        left: 65%;
-        transform: scale(2);
-    }
+  .save-container::-webkit-scrollbar {
+    width: 5px;
+  }
 
-    @keyframes bounce {
-        0% {
-            transform: translateY(-5px) scale(2);
-        }
+  .save-container {
+    left: -3%;
+    width: 98%;
+  }
 
-        24% {
-            opacity: 1;
-        }
+  .button-side-container {
+    top: 120%;
+    width: 85%;
+  }
 
-        40% {
-            transform: translateY(-25px) scale(2);
-        }
+  .button-side-container button {
+    width: 50px;
+    height: 25px;
+    color: #000000;
+  }
 
-        65% {
-            transform: translateY(-20px)scale(2);
-        }
-
-        85% {
-            transform: translateY(-10px)scale(2);
-        }
-
-        90% {
-            transform: translateY(0px)scale(2);
-        }
-
-        100% {
-            transform: translateY(0px)scale(2);
-        }
-    }
-
-    .save-container::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    .save-container {
-        left: -3%;
-        width: 98%;
-    }
-
-    .button-side-container {
-        top: 120%;
-        width: 85%;
-
-    }
-    
-    .button-side-container button{
-        width: 50px;
-        height: 25px;
-        color: #000000;
-    }
-
-    .modal-window {
-        width: 150%;
-}
-
+  .modal-window {
+    width: 150%;
+  }
 }

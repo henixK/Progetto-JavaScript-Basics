@@ -7,7 +7,7 @@ function createHtmlElements(html) {
 
 //Creating save section
 const screen = document.querySelector(".screen");
-const saveContainer = createHtmlElements("<div class='save-container'>Saved numbers: </div>");
+const saveContainer = createHtmlElements("<div class='save-container '>Saved numbers: </div>");
 const savedNumbers = createHtmlElements("<span id='saved-numbers'></span>");
 
 //Creating main buttons
@@ -17,7 +17,7 @@ const resetSaveDelete = createHtmlElements("<button class='resetSave-button'></b
 const increment = createHtmlElements("<button class='plus-button'></button>");
 
 //Creating side buttons
-const buttonSideContainer = createHtmlElements("<div class='button-side-container'></div>");
+const buttonSideContainer = createHtmlElements("<div class='button-side-container parent'></div>");
 const deleteButton = createHtmlElements("<button class='delete-button'>Del</button>");
 const modalPopup = createHtmlElements("<button class='modal'>?</button>");
 
@@ -51,33 +51,28 @@ let count = 0;
 let saved = '';
 const charmender = document.querySelector(".charmender");
 const incrementButton = document.querySelector(".plus-button");
+const parentElements = document.querySelectorAll(".parent");
 
 
-buttonContainer.addEventListener("click", function (event) {
-    if (event.target.classList.contains("minus-button")) {
+parentElements.forEach(parent => {
+    parent.addEventListener("click", event => {
+        const targetClass = event.target.classList;
+        if (targetClass.contains("minus-button")) {
+            count--;
+        } else if (targetClass.contains("resetSave-button")) {
+            saved += count + ', ';
+            count = 0;
+        } else if (targetClass.contains("plus-button")) {
+            count++;
+        } else if (targetClass.contains("modal")) {
+            modalWindow.classList.toggle("show-modal");
+        } else if (targetClass.contains("delete-button")) {
+            saved = '';
+        }
         charmender.classList.add("bounce");
-        count--;
-        countEl.textContent = count;
-    } else if (event.target.classList.contains("resetSave-button")) {
-        charmender.classList.add("bounce");
-        saved += count + ', ';
-        count = 0;
         countEl.textContent = count;
         savedNumbers.textContent = saved;
-    } else if (event.target.classList.contains("plus-button")) {
-        charmender.classList.add("bounce");
-        count++;
-        countEl.textContent = count;
-    }
-});
-
-buttonSideContainer.addEventListener("click", function (event) {
-    if (event.target.classList.contains("modal")) {
-        modalWindow.classList.toggle("show-modal");
-    } else if (event.target.classList.contains("delete-button")) {
-        saved = '';
-        savedNumbers.textContent = saved;
-    }
+    });
 });
 
 closeButton.addEventListener("click", function () {
