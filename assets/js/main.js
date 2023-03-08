@@ -25,15 +25,17 @@ createNewElement("button", "increment-button", buttonContainer);
 
 //Creating side buttons
 const buttonSideContainer = createNewElement("div", "button-side-container", buttonWrapper);
-createNewElement("button", "modal", buttonSideContainer).textContent= "?";
-createNewElement("button", "delete-button", buttonSideContainer).textContent= "del";
+createNewElement("button", "modal", buttonSideContainer).textContent = "?";
+createNewElement("button", "delete-button", buttonSideContainer).textContent = "del";
 
 //Creating the Popup instructions
 const modalWindow = createNewElement("div", "modal-window", screen);
 const closeButton = createNewElement("button", "close-button", modalWindow);
 closeButton.textContent = "x";
 const instructions = createNewElement("p", null, modalWindow);
-instructions.textContent = "Instructions: This is a simple counting application. Use the button on the right to increment the counter, the one on the left to decrement it, and the one in the center to save the current count and reset the counter. The saved numbers will be displayed in the 'Saved numbers' section. Use the 'delete' button to remove all saved numbers.";
+instructions.innerHTML = "Instructions:<br>- Use the button on the right to increment the counter.<br>- Use the button on the left to decrement the counter.<br>- Use the button in the center to save the current count and reset the counter.<br><br>The saved numbers will be displayed in the 'Saved numbers' section. Use the 'delete' button to remove all saved numbers.";
+
+
 
 let countEl = document.getElementById("counter");
 let count = 0;
