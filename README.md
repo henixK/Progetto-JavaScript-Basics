@@ -54,7 +54,7 @@ The saved numbers will be displayed in the saved numbers.
 
 - [Pixel art in pure css](https://pokecoder.hashnode.dev/making-pixel-art-with-pure-css)  
 - [Keyframe animation tool](https://webcode.tools/generators/css/keyframe-animation)
-- [Function to create HTML elements](https://www.youtube.com/watch?v=tlcEXDGo0oY&t=161s&ab_channel=dcode)
+- [Event delegation](https://it.javascript.info/event-delegation)
 
 ## Author
 - Linkedin [Kevin Bautista](https://www.linkedin.com/in/kevin-castaneda-bautista-469411199/)
