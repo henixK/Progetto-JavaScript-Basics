@@ -158,22 +158,20 @@ body {
   z-index: 1;
 }
 
-.button-container {
-  position: absolute;
-  top: 80%;
+.button-wrapper {
+  position: relative;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 20vw;
+  width: 25vw;
+}
+
+.button-container {
   display: flex;
   justify-content: space-between;
 }
 
-.button-side-container {
-  position: absolute;
-  top: 115%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20vw;
+.button-side-container{
   display: flex;
   justify-content: space-evenly;
 }
@@ -299,9 +297,12 @@ button:active {
     height: 10vw;
   }
 
-  .button-container {
-    width: 50%;
-    top: 85%;
+  .button-wrapper {
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
   }
 
   button {
@@ -357,11 +358,6 @@ button:active {
   .save-container {
     left: -3%;
     width: 98%;
-  }
-
-  .button-side-container {
-    top: 120%;
-    width: 85%;
   }
 
   .button-side-container button {
