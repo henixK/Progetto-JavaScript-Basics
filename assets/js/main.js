@@ -11,8 +11,7 @@ const pokeball = document.querySelector(".pokeball")
 //Creating save section
 const screen = document.querySelector(".screen");
 const saveContainer = createNewElement("div", "save-container", screen);
-const savedNumbers = createNewElement("span", "saved-numbers", saveContainer);
-savedNumbers.textContent = "Saved numbers: ";
+saveContainer.textContent = "Saved numbers: ";
 
 // Creating div wrapper for buttons 
 const buttonWrapper = createNewElement("div", "button-wrapper", pokeball);
@@ -36,7 +35,6 @@ const instructions = createNewElement("p", null, modalWindow);
 instructions.innerHTML = "Instructions:<br>- Use the button on the right to increment the counter.<br>- Use the button on the left to decrement the counter.<br>- Use the button in the center to save the current count and reset the counter.<br><br>The saved numbers will be displayed in the 'Saved numbers' section. Use the 'delete' button to remove all saved numbers.";
 
 
-
 let countEl = document.getElementById("counter");
 let count = 0;
 let saved = '';
@@ -50,16 +48,18 @@ buttonWrapper.addEventListener("click", event => {
     } else if (targetClass.contains("resetSave-button")) {
         saved += count + ', ';
         count = 0;
+        saveContainer.textContent = "Saved numbers: " + saved;
     } else if (targetClass.contains("increment-button")) {
         count++;
     } else if (targetClass.contains("modal")) {
         modalWindow.classList.toggle("show-modal");
     } else if (targetClass.contains("delete-button")) {
         saved = '';
+        saveContainer.textContent = "Saved: ";
     }
     charmender.classList.add("bounce");
     countEl.textContent = count;
-    savedNumbers.textContent = "Saved numbers: " + saved;
+    saveContainer.textContent = "Saved: " + saved;
 });
 
 closeButton.addEventListener("click", function () {
